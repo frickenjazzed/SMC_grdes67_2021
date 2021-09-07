@@ -1,0 +1,246 @@
+
+
+body {
+    background-color: #000;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1.125rem;
+    margin-bottom:50px;
+}
+.container {
+    max-width: 1024px;
+    min-height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+header {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+}
+
+main {
+    min-height:300px;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+.sanderson {
+    height: 238px;
+}
+/* cards */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* text-align: center; */
+    box-sizing: border-box;
+    
+}
+
+.cardImg {
+    min-height:250px;
+    width: 30%;
+    margin-top: 50px;
+}
+
+/* testimonials */
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+} 
+
+.tbox {
+    box-sizing: border-box;
+    width: 30%;
+    padding: 50px;
+    border: 1px solid #fff;
+    margin-top: 50px;
+}
+
+.tbox p:last-of-type {
+    font-size: .8rem;
+    padding-left: 30px;
+}
+
+.tbox img {
+    width: auto;
+}
+/* main */
+
+.herobox1 {
+    flex: 2;
+    padding-right: 50px;
+}
+
+.herobox2 {
+    flex: 1;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.25rem;
+    margin-bottom: 1rem;
+    margin-top: 15px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.363); 
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+p {
+    line-height: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+
+/* buttons */
+
+.mybutton {
+    background-color: white;
+    color:#000; 
+    font-family: 'Playfair Display', serif;
+    padding: 11px 25px;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(209, 209, 209, 0.466); 
+}
+
+.mybutton:hover {
+    background-color:rgb(154, 5, 199);
+    transition-duration: 1s;
+}
+
+.navbutton {
+    background-color: none;
+    color:#Fff; 
+    font-family: 'Playfair Display', serif;
+    padding: 11px 25px;
+    display: inline-block;
+    /* margin-left: 5px; */
+    /* border-radius: 2px; */
+    border: 1px solid #fff;
+    position: relative;
+}
+
+
+/* form */
+
+
+.inputwrapper {
+    margin-bottom: 20px;
+}
+
+input[type=text], input[type=email], textarea {
+    padding: 12px 20px;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: .85rem;
+    box-sizing: border-box;
+}
+
+.newline {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form {
+    margin: 20px 0;
+}
+
+/* MEDIA QUERIES */
+
+/* Tablet View */
+@media (max-width: 768px) {
+     header {
+        max-width: 730px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    main {
+        max-width: 730px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 20px;
+    }
+
+
+    .contact {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 730px;
+    }
+
+    .cards {
+        align-content: center;
+        padding-left: 80px;
+    }
+
+    form {
+        padding-left: 50px;
+    }
+
+    #contact h2 {
+        margin-left: 50px;
+    }
+
+} 
+
+
+/* Mobile View */
+ @media (max-width: 400px) {
+    main {
+        flex-wrap: wrap;
+        max-width: 380px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 20px;
+    }
+
+    
+    .herobox1 {
+        order: 2;
+        padding-right: 50px;
+    }
+    
+    .herobox2 {
+        order: 1;
+        padding-top: 20px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    header {
+        justify-content: center;
+    }
+
+    form {
+        padding-left: 20px;
+    }
+
+    #contact h2 {
+        margin-left: 20px;
+    }
+
+} 

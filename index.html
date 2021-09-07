@@ -4,9 +4,167 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Wed Design 3 Repository</title>
-    </head>
+
+        <!-- This is Eric Meyers CSS Reset -->
+        <link rel="stylesheet" href="css-reset.css">
+
+        <!-- This is my own style sheet -->
+        <link rel="stylesheet" href="styles.css">
+        
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+        <!-- Title -->
+        <title>Brandon Sanderson</title>
+    </head> 
+
     <body>
-        <h1>Welcome to My Page</h1>
+        <div class="container">
+
+            <header>
+                
+
+                <!-- Nav start -->
+                <nav>
+
+                    <div class="navbutton">
+                       <a href="#" >Books</a>
+                    </div>
+
+                    <div class="navbutton">
+                       <a href="#" >About</a>
+                    </div>
+
+                   <div class="navbutton">
+                       <a href="#contact" >Contact</a>
+                    </div>
+
+                </nav>
+
+            </header>
+
+            <main>
+                <!-- Header Thing -->
+                <div class="herobox1">
+                    <h1>Brandon Sanderson</h1>
+                    <p>Brandon Sanderson is the multiple #1 New York Times best-selling author of the incredible Mistborn and Stormlight Archive adult fantasy series. In 2013, he won the Hugo Award for Best Novella for The Emperor’s Soul, set in his acclaimed, interconnected Cosmere literary universe.</p>
+                    <p>Brandon has also published several New York Times best-selling books aimed at younger readers including Skyward, The Rithmatist, the Reckoners trilogy, and the five-book Alcatraz series.</p>
+                    <p>Since his first novel was published by Tor Books in May 2005, Brandon’s books have been translated into thirty-five different languages and sold over 21 million copies.</p>
+                    <a class="mybutton" onclick="document.getElementById('cards').style.display='none'">Contact</a>
+                </div>
+
+                <div class="herobox2">
+                    <img src="images/sanderson-1-superJumbo.jpg" alt="photo of Brandoon Sanderson in hi stufy holding a book" class="sanderson">
+                </div>
+            </main>
+
+            <!-- Cards/Gallery Begin -->
+            <div class="cards" id="cards">
+                <div class="cardImg">
+                    <picture>
+                        <source media="(min-width:768px)" srcset="images/1Way-of-Kings_200.jpg">
+                        <source media="(min-width:465px)" srcset="images/1Way-of-Kings_100.jpg">
+                        <img src="images/1Way-of-Kings.jpg" alt=" cover of Way of Kings by Brandon Sanderson">
+                    </picture>
+                </div>
+                
+                <div class="cardImg">
+                    <picture>
+                        <source media="(min-width:768px)" srcset="images/2Words-of-Radiance_200.jpg">
+                        <source media="(min-width:465px)" srcset="images/2Words-of-Radiance_100.jpg">
+                        <img src="images/2Words-of-Radiance.jpg" alt=" cover of Words of Radiance by Brandon Sanderson">
+                    </picture>
+                </div>
+
+                <div class="cardImg">
+                    <picture>
+                        <source media="(min-width:768px)" srcset="images/3Edgedancer_200.jpg">
+                        <source media="(min-width:465px)" srcset="images/3Edgedancer_100.jpg">
+                        <img src="images/3Edgedancer.jpg" alt=" cover of Edgedancer by Brandon Sanderson">
+                    </picture>
+                </div>
+
+                <div class="cardImg">
+                    <picture>
+                        <source media="(min-width:768px)" srcset="images/4Oathbringer_200.jpg">
+                        <source media="(min-width:465px)" srcset="images/4Oathbringer_100.jpg">
+                        <img src="images/4Oathbringer.jpg" alt=" cover of Oathbringer by Brandon Sanderson">
+                    </picture>
+                </div>
+                
+                <div class="cardImg">
+                    <picture>
+                        <source media="(min-width:768px)" srcset="images/5Dawnshard_200.jpg">
+                        <source media="(min-width:465px)" srcset="images/5Dawnshard_100.jpg">
+                        <img src="images/5Dawnshard.jpg" alt=" cover of Dawnshard by Brandon Sanderson">
+                    </picture>
+                </div>
+
+                <div class="cardImg">
+                    <picture>
+                        <source media="(min-width:768px)" srcset="images/6RoW_200.jpg">
+                        <source media="(min-width:465px)" srcset="images/6RoW_100.jpg">
+                        <img src="images/6RoW.jpg" alt=" cover of Rhythm of War by Brandon Sanderson">
+                    </picture>
+                </div>
+
+                <div class="cardImg">
+                    <picture>
+                        <source media="(min-width:768px)" srcset="images/7Mistborn_200.jpg">
+                        <source media="(min-width:465px)" srcset="images/7Mistborn_100.jpg">
+                        <img src="images/7Mistborn.jpg" alt=" cover of Mistborn by Brandon Sanderson">
+                    </picture>
+                </div>
+                
+                <div class="cardImg">
+                    <picture>
+                        <source media="(min-width:768px)" srcset="images/8Well-of-Ascension_200.jpg">
+                        <source media="(min-width:465px)" srcset="images/8Well-of-Ascension_100.jpg">
+                        <img src="images/8Well-of-Ascension.jpg" alt=" cover of Well of Ascension by Brandon Sanderson">
+                    </picture>
+                </div>
+
+                <div class="cardImg noTablet">
+                    <picture>
+                        <source media="(min-width:768px)" srcset="images/9Hero-of-Ages_200.jpg">
+                        <source media="(min-width:465px)" srcset="images/9Hero-of-Ages_100.jpg">
+                        <img src="images/9Hero-of-Ages.jpg" alt=" cover of Hero of Ages by Brandon Sanderson">
+                    </picture>
+                </div>
+            </div>
+
+            <!-- Form -->
+            <div id="contact">
+                <h2>Contact</h2>
+                <form action="form.php">
+                    <div class="inputwrapper">
+                        <label for="name" class="newline">Name:</label>
+                        <input type="text" name="name" id="name" placeholder="Annie Wilkes">
+                    </div>
+
+                    <div class="inputwrapper">
+                        <label for="email" class="newline">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="annie@biggestfan.co">
+                    </div>
+
+                    <div class="inputwrapper">
+                        <label for="subject" class="newline">Subject:</label>
+                        <input type="text" name="subject" id="subject"  placeholder="Biggest Fan">
+                    </div>
+
+                    <div class="inputwrapper">
+                        <label for="message" class="newline">Message:</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="What's on your mind?"></textarea>
+                    </div>
+
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+
+        </div>
+
+
     </body>
 </html>
