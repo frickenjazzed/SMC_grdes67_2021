@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+        <style>
+            .navbar-brand img {
+                width: 75px;
+            }
+        </style>
+        <title>Grid and Navigation</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Logo_TV_2015.svg/1200px-Logo_TV_2015.svg.png" alt="brand logo">
+                  </a>
+
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+
+                    </ul>
+
+                  </div>
+
+
+                </div>
+              </nav>
+        </header>
+
+        <main class="container">
+            <section class="row">
+                <div class="col-12 col-xl-6 bg-primary">Col 1</div>
+                <div class="col-12 col-md-6 col-xl-3 bg-success">Col 2</div>
+                <div class="col-12 col-md-6 col-xl-3 bg-info">Col 3</div>
+            </section>
+
+            <section class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+
+                <div class="col bg-primary"> Row Col 1</div>
+                <div class="col bg-secondary"> Row Col 2</div>
+                <div class="col bg-danger"> Row Col 3</div>
+                <div class="col bg-warning"> Row Col 4</div>
+                <div class="col bg-info"> Row Col 5</div>
+                <div class="col bg-dark"> Row Col 6</div>
+                <div class="col bg-light"> Row Col 7</div>
+                <div class="col bg-success"> Row Col 8</div>
+
+            </section>
+        </main>
+
+        <footer></footer>
+        
+
+        <!-- JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    
+    </body>
+</html>
