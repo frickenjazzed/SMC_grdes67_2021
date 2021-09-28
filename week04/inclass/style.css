@@ -1,0 +1,23 @@
+:root {
+    --salmon: rgb(255, 166, 134);
+    --raspberry: rgb(182, 70, 95);
+    --green-black: rgb(22, 37, 33);
+    --charcoal: rgb(60, 71, 75);
+    --periwinkle: rgb(144, 151, 192);
+}
+
+.bg-light {
+    background-color: var(--periwinkle) !important;
+}
+
+
+.btn-outline-success {
+    color: var(--raspberry);
+    border-color: var(--raspberry);
+}
+
+.btn-outline-success:hover {
+    color:rgb(255, 255, 255);
+    background-color: var(--raspberry);
+    border-color: var(--raspberry);
+}

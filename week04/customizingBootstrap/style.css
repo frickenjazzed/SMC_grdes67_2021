@@ -1,0 +1,131 @@
+:root {
+    --gold: rgb(154, 128, 69);
+    --parchment: rgb(255, 237, 187);
+    --mulberry: rgb(85, 37, 37);
+    --drkbrwn: rgb(38, 1, 1);
+    --tangerine: rgb(218, 75, 0);
+
+    --brightmint: rgb(5, 242, 219);
+    --ocean: rgb(63, 140, 133);
+    --seafoam: rgb(126, 191, 154);
+    --cucumberwater: rgb(217, 242, 162);
+    --offblack: rgb(13, 13, 13);
+    --offblackfade: rgba(13, 13, 13, .55);
+
+    --luckotheirish: rgb(86, 191, 132);
+    --lightirish: rgb(154, 217, 181);
+    --cranberry: rgb(191, 42, 42);
+    --juice: rgb(242, 82, 82);
+
+
+}
+
+/* first go */
+.bg-body {
+    background-color: var(--parchment) !important;
+}
+.bg-light {
+    background-color: var(--gold) !important;
+}
+
+h1, h2, h3, h4, h6 {
+    font-family: 'Satisfy', cursive !important;
+    color: var(--tangerine);
+}
+h5 {
+    color: var(--mulberry);
+    font-family: 'Satisfy', cursive !important;
+}
+p {
+    font-family: 'Lato', sans-serif !important;
+}
+
+.card {
+    background-color: var(--gold);
+    border: none;
+    color: #fff;
+}
+
+/* take 2 */
+
+.bg-primary{
+    background-color: var(--cucumberwater) !important;
+}
+
+.bg-success {
+    background-color: var(--brightmint) !important;
+}
+
+.bg-transparent {
+    border: 1px solid rgba(0,0,0,.125);
+    color: black;
+}
+
+.h1, .h2, .h3, .h4, .h6 {
+    font-family: 'Grechen Fuemen', cursive !important;
+    color: var(--seafoam);
+}
+.h5 {
+    color: var(--ocean);
+    font-family: 'Grechen Fuemen', cursive !important;
+}
+
+.navbar-dark .navbar-toggler {
+    color: var(--offblack) !important;
+    border-color: var(--offblack) !important;
+}
+
+.navbar-dark .navbar-brand {
+    color: var(--offblack);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--offblackfade);
+}
+
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
+    color: var(--offblack);
+}
+/* try 3 */
+
+.bg-secondary {
+    background-color: var(--lightirish) !important;
+}
+
+.display-1, .display-2, .display-3, .display-4, .display-6 {
+    font-family: 'Bebas Neue', cursive !important;
+    color: var(--cranberry);
+}
+
+.display-1 {
+    font-size: 3.5rem;
+}
+
+.display-2 {
+    font-size: 3rem;
+}
+
+.display-3 {
+    font-size: 2.5rem;
+}
+
+.display-4 {
+    font-size: 2rem;
+}
+
+.display-5 {
+    color: var(--lightirish);
+    font-family: 'Bebas Neue', cursive !important;
+    font-size: 1.5rem;
+    border: 1px solid;
+    background-color: var(--luckotheirish);
+    padding: 5px 5px 5px 5px;
+}
+
+.display-6 {
+    font-size: 1rem;
+}
+
+.card-title {
+    
+}
