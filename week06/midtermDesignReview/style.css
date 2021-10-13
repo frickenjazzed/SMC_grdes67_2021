@@ -1,0 +1,52 @@
+nav {
+    margin-bottom: 30px;
+}
+
+i {
+    padding: 0 8px;
+    font-size: 1.25rem;
+    color: rgb(255, 255, 255);
+}
+
+h2 {
+    padding: 20px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Satisfy', cursive;
+}
+
+h1, h2 {
+    color: rgb(153, 56, 232) !important;
+}
+
+h5 {
+    color: rgb(84, 56, 232);
+}
+
+.text-muted {
+    color: rgba(180, 56, 232, .6) !important;
+}
+
+p {
+    font-family: 'Urbanist', sans-serif;
+}
+
+nav a {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 1.25rem;
+}
+
+.bg-light {
+    background-color: rgb(153, 56, 232) !important;
+}
+
+.btn-primary {
+    background-color: rgb(153, 75, 255) !important;
+    border-color: rgb(180, 56, 232);
+}
+
+.btn-primary:hover {
+    background-color: rgb(136, 26, 255);
+    border-color: rgb(178, 12, 232);
+}

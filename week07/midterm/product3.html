@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- my css -->
+    <link rel="stylesheet" href="styles.css">
+ <!-- icon stuff -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+ <title>Midterm Structure</title>
+</head>
+<body>
+ <header>
+
+     <!-- nav -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+         <div class="container-fluid">
+
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+
+           <a class="navbar-brand" href="index.html">Navbar</a>
+
+           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+
+             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                 <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       Shop
+                     </a>
+                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                       <li><a class="dropdown-item" href="product1.html">Product 1</a></li>
+                       <li><a class="dropdown-item" href="product2.html">Product 2</a></li>
+                       <li><a class="dropdown-item" href="product3.html">Product 3</a></li>
+                     </ul>
+                   </li>
+               <li class="nav-item">
+                 <a class="nav-link"  href="blog.html">Blog</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="faq.html">FAQ</a>
+               </li>
+               
+             </ul>
+             <a href="cart.html"><i class="bi bi-basket"></i></a>
+             <i class="bi bi-search"></i>
+           </div>
+         </div>
+     </nav>
+
+    </header>
+
+    <div class="container">
+      <main>
+        <div class="text-center">
+          <h1>3D Halloween Card</h1>
+        </div>
+         <!-- image -->
+         <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-lg-8 col-md-10 col-sm-12" >
+                <div class="card" >
+                  <img src="images/spotlight3.jpeg" class="card-img-top" alt="...">
+      
+                </div>
+              </div>
+          </div>
+      </div>
+      <!-- stars and price -->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12  col-md-6 order-sm-1 order-md-2 ">
+            <div class="card">
+              <div class="card-header"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <a href="#review" class="card-link">2 reviews</a></div>
+              <div class="card-body">
+                <h5 class="card-title">$4.99</h5>
+      
+                <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+              </div>
+            </div>
+      
+          </div>
+      
+          <div class="col-sm-12 col-md-6 order-sm-2 order-md-1">
+            <div class="card">
+              <div class="card-body">
+                This is some text within a card body.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- reviews -->
+      <h2 id="review">Reviews</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 ">
+            <div class="card" >
+              <div class="card-body">
+                <!-- review 1 -->
+                <div class="card">
+                  <div class="card-header">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+                <!-- review 2 -->
+                <div class="card">
+                  <div class="card-header">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+                <!-- end links -->
+                <a href="#" class="card-link">view all</a>
+                <a href="#" class="card-link">leave a review</a>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+      <h2>Similar Product</h2>
+      
+      
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 " >
+                <!-- item 1 -->
+                <div class="card w-75" >
+                  <img src="images/spotlight1.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Serenading Moonlight Tealight Holder</h5>
+                    <a href="product1.html" class="card-link">View</a>
+                  </div>
+                </div>
+                </div>
+                <!-- item 2 -->
+                  <div class="col-sm-6">
+                    <div class="card w-75" >
+                      <img src="images/spotlight2.jpeg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Dancing Skeleton</h5>
+                        <a href="product2.html" class="card-link">View</a>
+                      </div>
+                    </div>
+                  </div>
+      
+              </div>
+          </div>
+      
+      
+      
+        
+        
+        </main>
+    </div>
+
+  <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col" style="height:100px;" >Sites researched:
+            <p>Sites:
+                https://www.ethereallywicked.com/
+                https://designbundles.net/
+                https://www.3dsvg.com/
+                https://www.orchardcorset.com/</p></div>
+        </div>
+    </div>
+</footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+   
+  </body>
+</html>

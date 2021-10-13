@@ -1,0 +1,61 @@
+nav {
+    margin-bottom: 40px;
+}
+
+i {
+    padding: 0 8px;
+    font-size: 1.5rem;
+    color: rgb(179, 118, 61) !important;
+}
+
+h2 {
+    padding: 20px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Permanent Marker', cursive;
+    color: rgb(47, 151, 179) !important;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2.75rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+h4{
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 1.75rem;
+}
+
+h6 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: 'Josefin Slab', serif;
+}
+
+nav a {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.5rem;
+    color: rgb(179, 118, 61) !important;
+}
+
+.bg-light {
+    background-color: rgb(112, 224, 255) !important;
+}
+
+.btn-primary {
+    background-color: rgb(255, 195, 138) !important;
+}
+
