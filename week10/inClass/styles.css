@@ -1,0 +1,122 @@
+body {
+    margin: 0px;
+    overflow: hidden;
+    animation-name: colorBody;
+    animation-duration: 5s;
+    position:relative;
+    height: 100vh;
+}
+
+.circle {
+    border-radius: 50%;
+    background-color: hsl(0, 100%, 50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    animation: circleAnim 5s 2s forwards;
+    z-index: 5;
+}
+
+.strip {
+    height: 25vh;
+    width: 100vw;
+    position: absolute;
+}
+
+#strip1 {
+    background-color: hsl(45, 100%, 50%);
+    /* right: -100vw; */
+    top: 0;
+    animation-name: rightToLeft;
+    animation-duration: 2s;
+    /* animation-fill-mode:forwards; */
+
+}
+
+#strip2 {
+    background-color: hsl(135, 100%, 50%);
+    left: -100vw;
+    top: 25vh;
+    animation-name: leftToRight;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-fill-mode:forwards;
+}
+
+#strip3 {
+    background-color: hsl(225, 100%, 50%);
+    right: -100vw;
+    top: 50vh;
+    animation-name: rightToLeft;
+    animation-duration: 4s;
+    animation-fill-mode:forwards;
+}
+
+#strip4 {
+    background-color: hsl(315, 100%, 50%);
+    left: -100vw;
+    top: 75vh;
+    animation-name: leftToRight;
+    animation-duration: 4s;
+    animation-fill-mode:forwards;
+}
+
+main {
+    width: 960px;
+    margin: auto;
+    z-index: 10;
+    animation: showMain 3s 6s forwards;
+    position: absolute;
+    top: 20vh;
+    left: 10vw;
+    opacity: 0;
+}
+
+/* animations */
+
+@keyframes colorBody {
+    from {background-color: hsl(0, 100%, 100%);}
+    to {background-color: hsl(0, 100%, 50%);}
+}
+
+@keyframes rightToLeft {
+    from {right: -100vw;}
+    to {right: 0;}
+}
+
+@keyframes leftToRight {
+    from {left: -100vw;}
+    to {left: 0;}
+}
+
+@keyframes circleAnim {
+    0% {
+        background-color: hsl(45, 100%, 50%);
+        width: 1vw; 
+        height: 1vh;}
+    15% {
+        background-color: hsl(135, 100%, 50%);
+    }
+    30% {
+        background-color: hsl(225, 100%, 50%);
+    }
+    50% {
+        background-color: hsl(315, 100%, 50%);
+    }
+    75% {
+        background-color: hsl(0, 100%, 50%);
+    }
+    100% {
+        background-color: hsl(0, 100%, 50%);
+        width: max(150vw, 150vh);
+        height: max(150vw, 150vh);
+    }
+}
+
+@keyframes showMain {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
