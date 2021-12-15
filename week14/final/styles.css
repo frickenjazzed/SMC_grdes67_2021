@@ -20,10 +20,31 @@ h2 {
 h1 {
     text-align: center;
     padding-top: 50px;
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+h3 {
+    font-size: 2.5rem;
+}
+
+h5 {
+    font-size: 2rem;
+    background-color: RGB(69, 140, 249);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Amatic SC', cursive;
+    color: RGB(33, 29, 30);
 }
 
 p {
-    text-align: center;
+    /* text-align: center; */
+    font-family: 'Andika', sans-serif;
+    color: RGB(33, 29, 30);
+    font-size: 1rem;
 }
 
 footer {
@@ -35,31 +56,31 @@ footer {
     margin-bottom: 50px;
 }
 
-.bg-warning {
-    /* min-height: 30px; */
-    background-color: rgba(var(--bs-success-rgb),var(--bs-bg-opacity))!important;
+.bg-light {
+    background-color: RGB(69, 140, 249) !important;
 }
 
-.bg-primary {
-    min-height: 500px;
-    background-color: rgba(var(--bs-success-rgb),var(--bs-bg-opacity))!important;
+.bg-warning {
+    /* min-height: 30px; */
+    background-color: RGB(247, 175, 170)!important;
 }
 
 .bg-info {
     height: 100%;
+
+    background-color: RGB(245, 245, 253)!important;
 }
 
-.bg-secondary {
-    min-height: 250px;
-}
-
-.bg-success {
-    min-height: 300px;
-}
 .col-4 {
     margin-left: auto;
     margin-right: auto;
 } 
+
+.btn-secondary {
+    background-color: RGB(247, 175, 170)!important;
+    color: rgb(0,0,0);
+    border-color: RGB(247, 175, 170);
+}
 
 /* jumbo */
 
@@ -94,15 +115,15 @@ footer {
 }
 
 .shortTop {
-    height: 300px;
+    min-height: 300px;
 }
 
-.bgColor {
+/* /* .bgColor {
     width: 100%;
-    /* padding-top: 25px; */
+    padding-top: 25px;
     padding-bottom: 50px;
-    margin-top: 50px;
-}
+    margin-top: 50px; 
+} */
 
 @media (max-width: 580px){
     .smGone {
@@ -118,4 +139,14 @@ footer {
 .carousel-item {
     height: 50rem;
     margin-top: 25px;
+}
+
+.container {
+    min-height: 100px;
+}
+
+i {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.5rem;
 }
