@@ -32,6 +32,10 @@ h3 {
 
 h5 {
     font-size: 2rem;
+    
+}
+
+.bluebg {
     background-color: RGB(69, 140, 249);
 }
 
